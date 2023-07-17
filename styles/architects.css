@@ -1,8 +1,100 @@
 /* work sans google font */
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-*{
+/* shared styles */
+* {
     font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.25rem;
+    background-color: #ff900e;
+    padding: 20px 25px;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: 0px;
+}
+
+/* header releted styles */
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-weight: 700;
+    font: size 3rem;
+    color: #131313;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 35px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner releted styles */
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner-description {
+    color: #727272;
+}
+
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive media quary */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tablet or mediym devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+        padding: 50px;
+    }
 }
