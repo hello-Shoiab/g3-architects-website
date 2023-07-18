@@ -1,9 +1,10 @@
 /* work sans google font */
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+font-family: 'Work Sans', sans-serif;
 
 /* shared styles */
 * {
     font-family: 'Work Sans', sans-serif;
+
 }
 
 .text-light-gray {
@@ -28,9 +29,10 @@
 }
 
 .section-title {
+    font-size: 50px;
     font-weight: 700;
-    font: size 3rem;
     color: #131313;
+   
 }
 
 /* header releted styles */
@@ -54,7 +56,7 @@ nav li {
     list-style: none;
     margin-right: 35px;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 30px;
 }
 
 nav li a {
@@ -73,6 +75,7 @@ nav li a {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
+    margin-top: 60px;
 }
 
 .text-light-gray {
@@ -132,11 +135,15 @@ main {
 }
 
 /* facts styles */
-.section-title{
-    margin-top: 50px;
+.section-title-1 {
+    margin-top: 110px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #131313;
+
 }
 
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
 }
@@ -146,15 +153,17 @@ main {
     border: 1px solid #FF900E;
     text-align: center;
     padding: 40px 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-.facts-card-container .card-title{
+.facts-card-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 5px;
 }
 
-.facts-card-container .card-stats{
+.facts-card-container .card-stats {
     font-size: 2.8rem;
     color: #424242;
     margin-top: 10px;
@@ -174,6 +183,62 @@ main {
     gap: 30px;
 }
 
+.features {
+    display: flex;
+    margin-top: 140px;
+
+}
+
+.features-container-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-right: 130px;
+}
+
+.features-cards-container {
+    width: 586px;
+    height: 140px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.features-cards-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+
+}
+
+.text-light-gray-1 {
+    margin-top: 7px;
+    color: #727272;
+}
+
+
+/* footer section start */
+.footer-container {
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 0px auto;
+    margin-bottom: 200px;
+
+}
+
+.footer-description {
+    font-size: 30px;
+    color: #424242;
+}
+
+
+
 /* responsive media quary */
 /* mobile devices */
 @media screen and (max-width:576px) {
@@ -184,7 +249,7 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
-    .Sponspors-img-container{ 
+    .Sponspors-img-container {
         flex-direction: column;
     }
 
@@ -192,21 +257,24 @@ main {
         grid-template-columns: 1fr;
     }
 
-    .teams-content,.facts-card-container {
+    .teams-content,
+    .facts-card-container {
         padding-right: 20px;
         padding-left: 20px;
     }
 
-.facts-card-container{
-    gap: 20px;
-}
+    .facts-card-container {
+        gap: 20px;
+    }
 
 }
+
 /* tablet or mediym devices */
 @media screen and (min-width:576px) and (max-width:960px) {
 
     nav,
-    .teams-container, .Sponspors-img-container {
+    .teams-container,
+    .Sponspors-img-container {
         flex-direction: column
     }
 
